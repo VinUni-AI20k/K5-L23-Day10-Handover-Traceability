@@ -1,0 +1,1 @@
+# Lab Day 10 chỉ dùng thư viện chuẩn của Python 3.9+. Không cần cài gì.

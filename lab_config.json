@@ -1,0 +1,8 @@
+{
+  "mshv": "",
+  "ho_ten": "",
+  "track": "B",
+  "batch_id": "lo_000_v1",
+  "submitter_code": "S00",
+  "classes": ["car", "truck", "van", "motorcycle", "person"]
+}

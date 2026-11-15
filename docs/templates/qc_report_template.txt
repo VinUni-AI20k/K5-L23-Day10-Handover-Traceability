@@ -1,0 +1,12 @@
+Lô:                              <<lo_NNN_v1>>
+Ngày kiểm:                       <<YYYY-MM-DD>>
+Người kiểm:                      <<mã người kiểm, ví dụ Q03, Q05; nhiều người thì liệt kê>>
+Mẫu kiểm:                        <<a/b ảnh (xx%)>> — <<vì sao chọn mẫu này: lô dưới 500 ảnh kiểm 100%, hoặc cách lấy mẫu>>
+Ảnh có lỗi (vòng 1):             <<số>>  — <<ảnh nào, loại lỗi>>
+Tỉ lệ ảnh đạt (vòng 1):          <<a/b = xx%>>
+Ảnh có lỗi sau sửa (vòng 2):     <<số, hoặc "không có vòng 2">>
+Tỉ lệ ảnh đạt (sau sửa):         <<a/b = xx%>>
+Ngưỡng (Day 7):                  >= 98% ảnh đạt (<= 2% lỗi): Release; vượt: Rework; guideline chưa rõ / dữ liệu hỏng: Hold
+Kết luận: <<Release | Rework | Hold>>
+Lý do:                           <<một đến hai câu, nêu số nào dùng để kết luận và vì sao>>
+Script kiểm được / không kiểm được: <<kiem_lo.py kiểm định dạng; không kiểm được nhãn đúng/sai nội dung — việc của người QC>>

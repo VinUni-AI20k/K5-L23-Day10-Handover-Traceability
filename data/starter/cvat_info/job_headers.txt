@@ -1,0 +1,6 @@
+Mô tả (Description) ghi ở đầu mỗi job trong CVAT — người quản trị điền khi giao job.
+
+Job 101 | Giao: A07 | Guideline: v1.2 | Ảnh img_001.jpg .. img_010.jpg
+Job 102 | Giao: A07 | Guideline: v1.3 | Ảnh img_011.jpg .. img_020.jpg
+Job 103 | Giao: A12 | Guideline: v1.2 | Ảnh img_021.jpg .. img_030.jpg
+Job 104 | Giao: A03 | Guideline: v1.3 | Ảnh img_031.jpg .. img_040.jpg

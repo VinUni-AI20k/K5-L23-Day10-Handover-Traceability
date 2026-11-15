@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+work/
+# zip tái lập được từ thư mục lô bằng scripts/pack_batch.py; chỉ commit file .sha256
+submission/*.zip

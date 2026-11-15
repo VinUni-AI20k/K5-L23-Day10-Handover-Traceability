@@ -1,0 +1,5 @@
+job_id,task,assignee,first_image,last_image,n_images,car,truck,van,motorcycle,person,total
+101,lo_900,A07,img_001.jpg,img_010.jpg,10,11,3,5,11,14,44
+102,lo_900,A07,img_011.jpg,img_020.jpg,10,9,1,5,5,18,38
+103,lo_900,A12,img_021.jpg,img_030.jpg,10,22,6,2,10,11,51
+104,lo_900,A03,img_031.jpg,img_040.jpg,10,16,4,4,7,12,43

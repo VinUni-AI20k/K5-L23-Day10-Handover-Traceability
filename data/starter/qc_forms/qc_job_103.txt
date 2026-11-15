@@ -1,0 +1,7 @@
+PHIẾU QC — JOB 103
+Người kiểm: Q05
+Ngày kiểm: 2026-11-07
+Mẫu kiểm: 10/10 ảnh (img_021.jpg … img_030.jpg) — lô dưới 500 ảnh kiểm 100%
+Vòng 1: 9/10 ảnh đạt. Lỗi: img_027.jpg — sai lớp (xe tải gán thành car)
+Vòng 2 (2026-11-08): người gán đã sửa trong CVAT; kiểm lại img_027.jpg: đạt
+Kết luận job: ĐẠT SAU SỬA (10/10 ở vòng 2)
