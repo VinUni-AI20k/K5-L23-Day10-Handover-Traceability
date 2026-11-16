@@ -6,7 +6,7 @@
 
 <p align="center">
   <img alt="cá nhân" src="https://img.shields.io/badge/lab-cá%20nhân-0b1f3a">
-  <img alt="thời lượng" src="https://img.shields.io/badge/thời%20lượng-~4,5%20giờ-ff8a3d">
+  <img alt="thời lượng" src="https://img.shields.io/badge/thời%20lượng-3%20giờ-ff8a3d">
   <img alt="ảnh" src="https://img.shields.io/badge/dữ%20liệu-40%20ảnh-12b3a8">
   <img alt="python" src="https://img.shields.io/badge/python-3.9%2B%20(chỉ%20thư%20viện%20chuẩn)-3776ab">
   <img alt="gpu" src="https://img.shields.io/badge/GPU-không%20cần-2fbf71">
@@ -24,7 +24,7 @@
 | Chuẩn hoá metadata, đổi tên ảnh, sequence ID | `check_names.py`, `apply_rename.py` |
 | Đóng gói lô + hash | `build_manifest.py`, `build_label_summary.py`, `pack_batch.py`, `hash_file.py` |
 | Truy vết, chia tập không rò rỉ, khoanh vùng lỗi | `truyvet.csv`, `make_split.py`, `trace_query.py` |
-| Bảo mật: phân quyền, dữ liệu ở lại, NDA | `security.md` |
+| Bảo mật: ca USB, ca khuôn mặt, tự soi dữ liệu | `security.md` |
 | Kiểm cuối và nhận lô như team AI | `check_submission.py`, `receive_batch.py` |
 
 ![Một lô bàn giao gồm bốn phần](docs/assets/batch_anatomy.png)
@@ -35,17 +35,13 @@
 
 ```mermaid
 flowchart LR
-  A[P1 Kiểm file xuất<br/>tự viết script] --> B[P2 Metadata<br/>đổi tên, sequence]
-  B --> C[P3 Đóng gói lô<br/>4 phần + truy vết + hash]
-  C --> D[P4 Chia tập<br/>+ xử lý báo lỗi]
-  D --> E[P5 Bảo mật]
-  E --> F[P6 Kiểm cuối<br/>nhận lô như team AI]
+  A[P1 Kiểm file xuất<br/>tự viết script] --> B[P2 Chuẩn hoá + đóng gói<br/>đổi tên, truy vết, QC]
+  B --> C[P3 Chia tập<br/>+ xử lý báo lỗi]
+  C --> D[P4 Bảo mật + kiểm cuối<br/>hash, nhận lô như team AI]
   style A fill:#2fbf71,color:#fff
-  style B fill:#7b61ff,color:#fff
-  style C fill:#ff8a3d,color:#fff
-  style D fill:#e5484d,color:#fff
-  style E fill:#12b3a8,color:#fff
-  style F fill:#0b1f3a,color:#fff
+  style B fill:#ff8a3d,color:#fff
+  style C fill:#e5484d,color:#fff
+  style D fill:#0b1f3a,color:#fff
 ```
 
 ## Bạn chọn dữ liệu
@@ -65,7 +61,7 @@ Hai track dùng chung quy trình, bộ kiểm và rubric.
 
 1. **Fork** repo thành repo **public** của bạn (tên: xem [SUBMISSION.md](SUBMISSION.md)), `git clone`.
 2. Kiểm Python: macOS/Linux `python3 --version`, Windows `py --version` (cần 3.9+). **Không cần `pip install`.** [GUIDE.md](GUIDE.md) có bảng cách gõ lệnh cho từng hệ điều hành.
-3. Điền [lab_config.json](lab_config.json) (Pha 0) và chọn Track A/B.
+3. Điền [lab_config.json](lab_config.json) (Pha 0) và chọn Track A/B. Bài có **5 pha, 13 bước**.
 4. Làm theo **[GUIDE.md](GUIDE.md)** từ **P1**. Track B: chưa mở `cvat_export_2_reexport/` cho tới khi nộp báo lỗi.
 5. Chạy `python scripts/check_submission.py` trước khi nộp.
 
@@ -88,7 +84,7 @@ Không. PASS = đúng **định dạng và nhất quán** (mở được, tên l
 
 - **Windows (PowerShell):** gọi `py`, chạy từng lệnh riêng (không `&&`), đừng dùng `>` để ghi báo cáo (script có `--out`), thêm `-X utf8` nếu lỗi font.
 - **macOS:** dùng `python3`; file ẩn như `.DS_Store` được tự bỏ qua; soạn `README.txt` ở dạng văn bản thuần (TextEdit → *Make Plain Text*).
-- **Không có CVAT:** Track B làm đủ P1–P6 không cần CVAT.
+- **Không có CVAT:** Track B làm đủ P1–P4 không cần CVAT.
 </details>
 
 ## Tài liệu
@@ -96,7 +92,7 @@ Không. PASS = đúng **định dạng và nhất quán** (mở được, tên l
 | Bạn cần | Xem |
 |---|---|
 | Các pha và lệnh chạy | [GUIDE.md](GUIDE.md) |
-| Mốc tiến độ 4,5 giờ | [CHECKPOINTS.md](CHECKPOINTS.md) |
+| Mốc tiến độ 3 giờ | [CHECKPOINTS.md](CHECKPOINTS.md) |
 | Quy tắc làm bài, dùng AI | [RULES.md](RULES.md) |
 | Chấm điểm (100 điểm) | [RUBRIC.md](RUBRIC.md) |
 | Sản phẩm phải nộp, tên repo | [SUBMISSION.md](SUBMISSION.md) |

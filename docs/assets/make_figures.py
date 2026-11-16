@@ -50,20 +50,20 @@ def hero():
 
 
 def roadmap():
-    steps = [("P1", "Kiểm file xuất", "script tự viết", GREEN), ("P2", "Metadata", "đổi tên, sequence", PURPLE), ("P3", "Đóng gói", "4 phần + hash", ORANGE),
-             ("P4", "Truy vết ngược", "báo lỗi → ảnh cần sửa", RED), ("P5", "Bảo mật", "phân quyền, NDA", TEAL), ("P6", "Kiểm cuối", "nhận lô như team AI", NAVY)]
+    steps = [("P1", "Kiểm file xuất", "script tự viết, báo lỗi", GREEN), ("P2", "Chuẩn hoá + đóng gói", "đổi tên, truy vết, QC", ORANGE),
+             ("P3", "Chia tập + báo lỗi", "ảnh cần sửa (tầng a/b)", RED), ("P4", "Bảo mật + kiểm cuối", "hash, nhận lô như team AI", NAVY)]
     W, H = 1600, 300
     im = Image.new("RGB", (W, H), "white")
     d = ImageDraw.Draw(im)
-    bw, gap = 215, 50
-    x0 = (W - (6 * bw + 5 * gap)) // 2
+    bw, gap = 320, 70
+    x0 = (W - (4 * bw + 3 * gap)) // 2
     for i, (a, b, c, col) in enumerate(steps):
         x = x0 + i * (bw + gap)
         rrect(d, (x, 70, x + bw, 230), 18, fill=col)
         center(d, (x + bw / 2, 85), a, font(30, True))
         center(d, (x + bw / 2, 135), b, font(24, True))
         center(d, (x + bw / 2, 172), c, font(18))
-        if i < 5:
+        if i < 3:
             d.polygon([(x + bw + gap - 8, 150), (x + bw + 8, 133), (x + bw + 8, 167)], fill=GRAY)
     im.save(HERE / "roadmap.png")
 

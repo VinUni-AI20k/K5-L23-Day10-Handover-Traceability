@@ -387,8 +387,8 @@ def main() -> None:
             lines = p_.split("\n")[1:]
             return "".join(re.sub(r"\s+", "", ln) for ln in lines if not ln.lstrip().startswith(">") and not re.fullmatch(r"[\s|:-]*", ln))
         filled = [p for p in parts if len(body(p)) >= 80]
-        r.check("F7", len(parts) >= 7 and len(filled) >= 7, f"security.md: {len(filled)}/{len(parts)} mục đã trả lời",
-                f"security.md cần ≥ 7 mục (## ...) mỗi mục có nội dung (đang {len(filled)}/{len(parts)} mục có nội dung)", G["F"])
+        r.check("F7", len(parts) >= 4 and len(filled) >= 4, f"security.md: {len(filled)}/{len(parts)} mục đã trả lời",
+                f"security.md cần ≥ 4 mục (## ...) mỗi mục có nội dung (đang {len(filled)}/{len(parts)} mục có nội dung)", G["F"])
         face = [p for p in parts if "khuôn mặt" in p.split("\n")[0].lower()]
         r.check("F8", bool(face) and "Hold" in face[0] and "người phụ trách" in face[0].lower(), "security.md: ca khuôn mặt kết luận Hold + báo người phụ trách",
                 "security.md: mục về khuôn mặt phải kết luận Hold và nêu báo 'người phụ trách'", G["F"])
@@ -397,7 +397,7 @@ def main() -> None:
 
     # ------------------------------------------------------------------ G
     must = {"kiem_lo.py": 300, "prompts.md": 80, "bug_ticket.md": 80, "mutation_test.md": 80, "rename_map.csv": 30,
-            "seq_remap.csv": 5, "cvat_counts.csv": 10, "drills.md": 200}
+            "seq_remap.csv": 5, "cvat_counts.csv": 10}
     for fn, mn in must.items():
         p = WORK / fn
         r.check(f"G-{fn}", p.is_file() and p.stat().st_size >= mn, f"worklog/{fn} có",
@@ -433,7 +433,7 @@ def main() -> None:
         r.check("G-note", (ROOT / fn).is_file(), "có individual_note.md", f"thiếu {fn}", G["G"])
     # placeholder còn sót
     scan = [bd / n for n in ("README.txt", "qc_report.txt")] + [SUBMISSION / "phieu_ban_giao.md", SUBMISSION / "security.md",
-            ANA / "impact_analysis.md", SUBMISSION / "individual_note.md", WORK / "bug_ticket.md", WORK / "mutation_test.md", WORK / "prompts.md", WORK / "drills.md"]
+            ANA / "impact_analysis.md", SUBMISSION / "individual_note.md", WORK / "bug_ticket.md", WORK / "mutation_test.md", WORK / "prompts.md"]
     left = [p.name for p in scan if p.is_file() and "<<" in p.read_text(encoding="utf-8")]
     r.check("G-ph", not left, "không còn chỗ <<...>> chưa điền", f"còn <<...>> chưa điền trong: {short(left)}", G["G"])
     finish(r, args)

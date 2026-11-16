@@ -7,12 +7,9 @@
 
 | # | Lỗi cài | Cách cài (một dòng) | Script có bắt? | Bằng chứng (dòng output) |
 |---|---|---|---|---|
-| 1 | tên lớp viết hoa `Car` | <<>> | <<>> | <<>> |
-| 2 | tên lớp có dấu cách thừa | <<>> | <<>> | <<>> |
-| 3 | thiếu một ảnh | <<>> | <<>> | <<>> |
-| 4 | box ngoài ảnh | <<>> | <<>> | <<>> |
-| 5 | box rộng 0 | <<>> | <<>> | <<>> |
-| 6 | nhãn ít hơn CVAT | <<>> | <<>> | <<>> |
+| 1 | tên lớp sai (`Car` hoặc dấu cách thừa) | <<>> | <<>> | <<>> |
+| 2 | thiếu một ảnh | <<>> | <<>> | <<>> |
+| 3 | box ngoài ảnh | <<>> | <<>> | <<>> |
 
 ## Script bỏ sót lỗi nào, đã sửa gì
-<<Nếu mọi lỗi đều bắt ngay lần đầu thì viết thêm 1–2 lỗi cài khác mà bạn nghĩ ra và thử.>>
+<<Nếu cả 3 lỗi đều bắt ngay lần đầu thì thử thêm một lỗi khác bạn nghĩ ra (box rộng 0, nhãn ít hơn CVAT) và ghi vào bảng.>>

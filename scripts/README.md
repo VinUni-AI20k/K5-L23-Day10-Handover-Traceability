@@ -9,14 +9,14 @@ Chạy **từ thư mục gốc repo**. Python 3.9+, chỉ dùng thư viện chu�
 |---|---|---|---|
 | 2 | `check_names.py` | kiểm tên file theo quy ước, giải thích từng chỗ sai | (màn hình) |
 | 2 | `apply_rename.py` | đổi tên ảnh theo `rename_map.csv` + sửa `file_name` trong nhãn | `submission/<lô>/images`, `annotations` |
-| 3 | `build_manifest.py` | liệt kê file + sha256 | `<lô>/manifest.csv` |
-| 3 | `build_label_summary.py` | số nhãn theo lớp | `<lô>/label_summary.csv` |
-| 3 | `hash_file.py` | sha256 một file; `--verify` so mã | (màn hình) |
-| 3 | `pack_batch.py` | zip tái lập + hash | `submission/<lô>.zip`, `<lô>.sha256` |
-| 3, 6 | `receive_batch.py` | đóng vai team AI nhận lô | (màn hình) |
-| 4 | `make_split.py` | chia train/val theo frame (sai) hoặc sequence (đúng), kiểm rò rỉ | `submission/analysis/split.csv` |
-| 4 | `trace_query.py` | lọc `truyvet.csv` theo guideline/người/sequence/lớp | (màn hình) |
-| 6 | `check_batch.py` (hoặc `check_submission.py`, cùng việc) | bộ kiểm cuối, mã A–G (xem [RUBRIC.md](../RUBRIC.md)) | (màn hình), `--json` |
+| 2 | `build_manifest.py` | liệt kê file + sha256 | `<lô>/manifest.csv` |
+| 2 | `build_label_summary.py` | số nhãn theo lớp | `<lô>/label_summary.csv` |
+| 4 | `hash_file.py` | sha256 một file; `--verify` so mã | (màn hình) |
+| 4 | `pack_batch.py` | zip tái lập + hash | `submission/<lô>.zip`, `<lô>.sha256` |
+| 4 | `receive_batch.py` | đóng vai team AI nhận lô | (màn hình) |
+| 3 | `make_split.py` | chia train/val theo frame (sai) hoặc sequence (đúng), kiểm rò rỉ | `submission/analysis/split.csv` |
+| 3 | `trace_query.py` | lọc `truyvet.csv` theo guideline/người/sequence/lớp | (màn hình) |
+| 4 | `check_batch.py` (hoặc `check_submission.py`, cùng việc) | bộ kiểm cuối, mã A–G (xem [RUBRIC.md](../RUBRIC.md)) | (màn hình), `--json` |
 
 ## Mã kiểm của `check_batch.py`
 

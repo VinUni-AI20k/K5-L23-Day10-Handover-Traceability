@@ -17,7 +17,7 @@ Mọi giấy tờ đi kèm là **giả định để luyện tập**: nhãn tổ
 | Nguồn | ảnh **công khai hoặc giấy phép mở** (ví dụ ảnh Day 7). Ảnh riêng tư: xem [RULES.md](../RULES.md) |
 | File xuất | COCO 1.0 từ CVAT (không phải file bạn tự sửa JSON) |
 | Giấy tờ tương đương starter | xem bảng dưới |
-| Phiên bản guideline | **≥ 2 phiên bản** trong lô (thiếu thì Pha 4.2 không làm được) (ví dụ Day 7: `v1.0` cho ảnh không bị cờ, `v1.1` cho ảnh đã calibration) |
+| Phiên bản guideline | **≥ 2 phiên bản** trong lô (thiếu thì Pha 3.2 không làm được) (ví dụ Day 7: `v1.0` cho ảnh không bị cờ, `v1.1` cho ảnh đã calibration) |
 | Người gán / người kiểm | ≥ 2 người gán (có thể là bạn trong các vai/tài khoản Day 7); người kiểm khác người gán |
 
 | Starter có | Track A bạn cần có |

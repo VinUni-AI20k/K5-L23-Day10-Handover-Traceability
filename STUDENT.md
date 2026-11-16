@@ -17,5 +17,5 @@
 - Mutation test: script bắt <<.../...>> lỗi cài
 - QC: vòng 1 <<a/b = ...%>>; kết luận cuối <<a/b = ...%>>
 - Báo lỗi của team AI: tầng (a) <<... ảnh>>, tầng (b) <<... ảnh>> trên tổng <<... ảnh>>
-- Thời gian thực tế: P1 <<... phút>>, P2 <<...>>, P3 <<...>>, P4 <<...>>, P5 <<...>>, P6 <<...>>
+- Thời gian thực tế: P1 <<... phút>>, P2 <<...>>, P3 <<...>>, P4 <<...>>
 - **Quyết định:** <<Release / Hold / Rework>> — lý do một dòng: <<...>>

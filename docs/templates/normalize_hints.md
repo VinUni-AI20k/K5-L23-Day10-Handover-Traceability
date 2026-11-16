@@ -6,6 +6,6 @@ Không có lời giải ở đây, chỉ các mẹo để khỏi mất thời gi
 - **Camera** ánh xạ về F hoặc B bằng một từ điển nhỏ, so sánh sau khi `.lower()`: ví dụ `{"camf": "F", "front": "F", ...}`. Gặp giá trị chưa có trong từ điển thì **dừng và thêm**, đừng đoán.
 - **Số** (xe, sequence, frame): lấy chữ số bằng `re.sub(r"\D", "", s)`; cẩn thận chuỗi rỗng.
 - **Mã xe trống**: tìm các dòng khác cùng (ngày, camera, sequence) rồi lấy mã xe của chúng.
-- **Sequence trùng mã**: gom các dòng liên tiếp có cùng (xe, ngày, camera, sequence) thành một "đoạn thu", rồi xét từng đoạn theo quy tắc ở GUIDE Pha 2.2.
+- **Sequence trùng mã**: gom các dòng liên tiếp có cùng (xe, ngày, camera, sequence) thành một "đoạn thu", rồi xét từng đoạn theo quy tắc ở GUIDE Pha 2.1.
 - **Kiểm** bằng `python scripts/check_names.py --dir <thư mục>` sau khi đổi tên.
 - Làm bằng Excel/Google Sheets cũng được: lưu **CSV UTF-8 (Comma delimited)**, dấu phẩy.

@@ -31,12 +31,11 @@ nhưng **sản phẩm (script, báo lỗi, phiếu, truy vết, phân tích) do 
 
 ## Độc lập
 
-- Mutation test (Pha 1.3) dùng file giả do **bạn** tự tạo, không copy của bạn khác.
-- Pha 6.3 (đổi lô với bạn cùng lớp) chỉ là **nhận lô** bằng `receive_batch.py`, không xem bài nhau.
+- Mutation test (Pha 1.2) dùng file giả do **bạn** tự tạo, không copy của bạn khác.
 
 ## Git và nộp bài
 
-- Repo **public** (hoặc theo hướng dẫn coach; `lab_config.json` và tiêu đề README có MSHV/họ tên, vì vậy chỉ dùng tên bạn đồng ý công khai). Commit mang **tên và email của bạn**; **ít nhất một commit mỗi pha** (7 commit trở lên).
+- Repo **public** (hoặc theo hướng dẫn coach; `lab_config.json` và tiêu đề README có MSHV/họ tên, vì vậy chỉ dùng tên bạn đồng ý công khai). Commit mang **tên và email của bạn**; **ít nhất một commit mỗi pha** (5 commit trở lên).
   Thứ tự commit phải hợp lý: `bug_ticket.md` trước khi dùng export lần 2; `kiem_lo.py` trước `check_report_export1.txt`.
 - Không commit `*.zip`, thư mục `work/`, API key, token, dữ liệu riêng tư.
 - Bài chấm theo commit cuối trước hạn. Hạn và kênh nộp do giảng viên/coach công bố; nộp muộn bị trừ điểm.

@@ -49,12 +49,11 @@ submission/
 │   ├── cvat_counts.csv
 │   ├── check_report_export1.txt
 │   ├── check_report_export2.txt
-│   ├── fixture_clean.json, fixture_images/, mutants/   # mutation test
+│   ├── fixture_clean.json, fixture_images/, mutants/   # mutation test (3 bản hỏng)
 │   ├── export_1/, export_2/       # Track A
 │   ├── bug_ticket.md
 │   ├── rename_map.csv
-│   ├── seq_remap.csv
-│   └── drills.md
+│   └── seq_remap.csv
 └── analysis/
     ├── split.csv
     └── impact_analysis.md
@@ -76,9 +75,9 @@ Thêm của lab:
 
 - [ ] Repo public, tên đúng quy tắc, mở được khi chưa đăng nhập.
 - [ ] Tiêu đề `README.md` đã đổi.
-- [ ] `kiem_lo.py` tự viết, có `mutation_test.md`.
+- [ ] `kiem_lo.py` tự viết, có `mutation_test.md` (3 lỗi cài).
 - [ ] `bug_ticket.md` commit **trước** khi dùng export lần 2 (Track B).
 - [ ] Kết luận Release/Hold/Rework **khớp số liệu** và nhất quán ở README, `qc_report.txt`, phiếu.
 - [ ] `receive_batch.py` không còn câu hỏi; hash trong phiếu = `lo_NNN_v1.sha256`.
-- [ ] ≥ 7 commit của bạn, mỗi pha một commit.
+- [ ] ≥ 5 commit của bạn, mỗi pha một commit.
 - [ ] Đã nộp link trước hạn.
