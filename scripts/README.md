@@ -16,7 +16,7 @@ Chạy **từ thư mục gốc repo**. Python 3.9+, chỉ dùng thư viện chu�
 | 3, 6 | `receive_batch.py` | đóng vai team AI nhận lô | (màn hình) |
 | 4 | `make_split.py` | chia train/val theo frame (sai) hoặc sequence (đúng), kiểm rò rỉ | `submission/analysis/split.csv` |
 | 4 | `trace_query.py` | lọc `truyvet.csv` theo guideline/người/sequence/lớp | (màn hình) |
-| 6 | `check_batch.py` | bộ kiểm cuối, mã A–G (xem [RUBRIC.md](../RUBRIC.md)) | (màn hình), `--json` |
+| 6 | `check_batch.py` (hoặc `check_submission.py`, cùng việc) | bộ kiểm cuối, mã A–G (xem [RUBRIC.md](../RUBRIC.md)) | (màn hình), `--json` |
 
 ## Mã kiểm của `check_batch.py`
 

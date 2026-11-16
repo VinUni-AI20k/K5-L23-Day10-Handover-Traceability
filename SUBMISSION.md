@@ -6,7 +6,9 @@ Mỗi học viên **một repo public** (fork/clone từ repo đề), đặt tê
 
 | Mẫu tên repo | Ví dụ |
 |---|---|
-| `K5-L23-DAY10-[MSHV]-Handover` | `K5-L23-DAY10-22001234-Handover` |
+| `K5-L23-DAY10-[MSHV]-[HoTen]-Handover` | `K5-L23-DAY10-22001234-NguyenVanA-Handover` |
+
+`HoTen` không dấu, viết liền.
 
 Theo hướng dẫn lớp nếu giảng viên đặt quy ước khác.
 
@@ -16,13 +18,15 @@ Theo hướng dẫn lớp nếu giảng viên đặt quy ước khác.
    ```markdown
    # Day 10 Lab — 22001234 - Nguyễn Văn A
    ```
-2. `python scripts/check_batch.py` không còn `FAIL`.
-3. Nộp link repo lên LMS **https://aithucchien.vinuni.edu.vn** hoặc kênh giảng viên/coach chỉ định.
+2. Điền [STUDENT.md](STUDENT.md) (kể cả "Kết quả tóm tắt").
+3. `python scripts/check_submission.py` (= `check_batch.py`) không còn `FAIL`.
+4. Nộp link repo lên LMS **https://aithucchien.vinuni.edu.vn** hoặc kênh giảng viên/coach chỉ định.
 
 ## Cấu trúc bắt buộc
 
 ```text
-README.md                          # dòng đầu: MSHV - Họ và tên
+README.md                          # dòng đầu: # Day 10 Lab — <MSHV> - <Họ và tên>
+STUDENT.md                         # thông tin + kết quả tóm tắt
 lab_config.json                    # đã điền
 submission/
 ├── lo_NNN_v1/                     # THƯ MỤC LÔ BÀN GIAO
