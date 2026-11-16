@@ -102,7 +102,6 @@ Không. PASS = đúng **định dạng và nhất quán** (mở được, tên l
 | Các script, mã kiểm A–G | [scripts/README.md](scripts/README.md) |
 | Mẫu file phải điền | [docs/templates/](docs/templates/) |
 | Thông tin & kết quả tóm tắt của bạn | [STUDENT.md](STUDENT.md) |
-| Review lab bằng học viên giả lập | [_review/](_review/) |
 
 ## Bạn học được gì
 
