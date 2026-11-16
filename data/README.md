@@ -33,11 +33,11 @@ Nếu thiếu giấy tờ nào, **hỏi coach trước khi làm tiếp** (không
 
 ### Quy ước riêng cho Track A
 
-- **Cấu hình:** `lab_config.json` thêm `"images_dir"` (đường dẫn thư mục ảnh gốc); export nằm ở `submission/worklog/export_1/` và `export_2/` (xem GUIDE 1).
+- **Cấu hình:** `lab_config.json` thêm `"images_dir"` (đường dẫn thư mục ảnh gốc); export nằm ở `submission/worklog/export_1/` và `export_2/` (xem GUIDE 1.4).
 - **Không cài lỗi vào dữ liệu thật.** Lô sạch ⇒ `bug_ticket.md` ghi "0 lỗi" kèm bằng chứng; điểm hạng mục 1 được tính thay thế như bảng Track A trong [RUBRIC.md](../RUBRIC.md).
 - **Mã người:** dùng mã giả danh dạng `A01`, `Q01` (không dùng tên thật). Bảng ánh xạ tên thật ↔ mã **không commit**.
 - **Người kiểm:** cần khác người gán. Nếu thật sự không có (một mình làm), đặt `"allow_same_reviewer": true` và giải thích ở README Ghi chú.
 - **Metadata:** nếu ảnh không có xe/camera/ngày chụp, tự đặt mã nhất quán, giải thích ở README Ghi chú; sequence = **một lần chụp liên tục** (cùng tác giả/sự kiện/phiên), không mỗi ảnh một sequence.
 - **Định dạng ảnh:** lab chỉ hỗ trợ tên `.jpg` chữ thường; ảnh `.png/.jpeg/.JPG` cần đổi sang `.jpg` (chuyển đổi bằng công cụ bạn dùng; ghi vào README Ghi chú).
-- **Ticket tầng (a)/(b):** bạn tự dựng từ một quy tắc đã đổi v1.0 → v1.1; xem GUIDE 4.2.
+- **Ticket tầng (a)/(b):** bạn tự dựng từ một quy tắc đã đổi v1.0 → v1.1; xem GUIDE 3.2.
 - **Ảnh riêng tư:** `"images_private": true`, không commit ảnh (RULES).

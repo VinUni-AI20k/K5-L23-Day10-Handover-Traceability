@@ -11,10 +11,6 @@
 - **SHA-256 zip:** <<64 ký tự, từ submission/lo_NNN_v1.sha256>>
 - **Kết luận:** <<Release | Rework | Hold: một từ ở đầu>> — <<lý do một dòng>>
 
-## Đối chiếu với người cùng cặp (tuỳ chọn)
-
-<<Tên/MSHV bạn đối chiếu, họ chỉ ra thiếu gì, bạn đã sửa gì>>
-
 ## Checklist bàn giao cuối cùng
 
 Chỉ tích mục nào khi bạn **đã kiểm thật** (ghi bằng chứng sau dấu gạch).

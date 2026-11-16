@@ -31,7 +31,7 @@
 
 ## Lộ trình
 
-![Lộ trình 6 pha](docs/assets/roadmap.png)
+![Lộ trình 4 pha chính](docs/assets/roadmap.png)
 
 ```mermaid
 flowchart LR

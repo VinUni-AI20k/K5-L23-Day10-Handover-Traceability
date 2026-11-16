@@ -28,5 +28,5 @@ Nhãn mất thuộc ảnh nào, bạn tìm ra bằng cách nào: <<>>
 ## 5. Cách tôi kiểm lại sau khi nhận export lần 2
 <<Lệnh nào, điều kiện đạt là gì.>>
 
-## 6. Kết quả sau export lần 2 / nhập lại CVAT
-<<Kết luận của check_report_export2.txt. Track A: kết quả Upload annotations (Replace) vào task mới. Track B: ghi "không làm" hoặc kết quả nếu có CVAT.>>
+## 6. Kết quả sau export lần 2
+<<Kết luận của check_report_export2.txt. Nhập lại CVAT (Upload annotations, Replace) là tuỳ chọn: nếu làm thì ghi 2–3 dòng kết quả.>>
